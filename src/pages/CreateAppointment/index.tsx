@@ -150,11 +150,9 @@ const CreateAppointment: React.FC = () => {
         provider_id: selectedProvider,
         date,
       });
-      console.log(selectedHour, selectedDate);
 
       navigate('AppointmentCreated', { date: date.getTime() });
     } catch (err) {
-      console.log(selectedHour, selectedDate);
       Alert.alert(
         'Erro ao criar agendamento',
         'Ocorreu um erro ao tentar criar o agendamento, tente novamente',
